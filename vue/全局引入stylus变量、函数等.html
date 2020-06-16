@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>全局引入stylus变量、函数 | Sep7th</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/logo.png">
+  <meta name="referrer" content="no-referrer">
+    
+    <link rel="preload" href="/assets/css/0.styles.e1dee4d0.css" as="style"><link rel="preload" href="/assets/js/app.e5d4c240.js" as="script"><link rel="preload" href="/assets/js/2.a6abf67c.js" as="script"><link rel="preload" href="/assets/js/35.9a91322c.js" as="script"><link rel="prefetch" href="/assets/js/10.99511151.js"><link rel="prefetch" href="/assets/js/11.3d40aeb1.js"><link rel="prefetch" href="/assets/js/12.65335717.js"><link rel="prefetch" href="/assets/js/13.db524745.js"><link rel="prefetch" href="/assets/js/14.1b9bec99.js"><link rel="prefetch" href="/assets/js/15.880d7117.js"><link rel="prefetch" href="/assets/js/16.21b2ba83.js"><link rel="prefetch" href="/assets/js/17.f807e7bc.js"><link rel="prefetch" href="/assets/js/18.61f3989d.js"><link rel="prefetch" href="/assets/js/19.8888cb54.js"><link rel="prefetch" href="/assets/js/20.7f353455.js"><link rel="prefetch" href="/assets/js/21.596fd22f.js"><link rel="prefetch" href="/assets/js/22.cc400215.js"><link rel="prefetch" href="/assets/js/23.4efebb42.js"><link rel="prefetch" href="/assets/js/24.d359e441.js"><link rel="prefetch" href="/assets/js/25.1b39cb61.js"><link rel="prefetch" href="/assets/js/26.c6d72860.js"><link rel="prefetch" href="/assets/js/27.61a3db53.js"><link rel="prefetch" href="/assets/js/28.e6a24595.js"><link rel="prefetch" href="/assets/js/29.66a30c0f.js"><link rel="prefetch" href="/assets/js/3.79558e2e.js"><link rel="prefetch" href="/assets/js/30.474004ef.js"><link rel="prefetch" href="/assets/js/31.376a96cc.js"><link rel="prefetch" href="/assets/js/32.0fd723d8.js"><link rel="prefetch" href="/assets/js/33.9d696578.js"><link rel="prefetch" href="/assets/js/34.8406a18a.js"><link rel="prefetch" href="/assets/js/36.14872e5c.js"><link rel="prefetch" href="/assets/js/37.84a6ad22.js"><link rel="prefetch" href="/assets/js/4.39f510d0.js"><link rel="prefetch" href="/assets/js/5.32f3de9f.js"><link rel="prefetch" href="/assets/js/6.5a79a3a4.js"><link rel="prefetch" href="/assets/js/7.00e15037.js"><link rel="prefetch" href="/assets/js/8.9a766cea.js"><link rel="prefetch" href="/assets/js/9.36a57a69.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e1dee4d0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="Sep7th" class="logo"> <span class="site-name can-hide">Sep7th</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/" class="nav-link">
+  Note
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  Css
+</a></div><div class="nav-item"><a href="/typescript/" class="nav-link">
+  TypeScript
+</a></div><div class="nav-item"><a href="/javascript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/git/" class="nav-link">
+  Git
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/note/" class="nav-link">
+  Note
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  Css
+</a></div><div class="nav-item"><a href="/typescript/" class="nav-link">
+  TypeScript
+</a></div><div class="nav-item"><a href="/javascript/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/git/" class="nav-link">
+  Git
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vue/使用插件实现一个加载组件.html" class="sidebar-link">使用插件实现一个加载组件</a></li><li><a href="/vue/利用v-model优化自定义组件.html" class="sidebar-link">利用v-model优化自定义组件</a></li><li><a href="/vue/全局引入stylus变量、函数等.html" class="active sidebar-link">全局引入stylus变量、函数</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue/全局引入stylus变量、函数等.html#解决方法" class="sidebar-link">解决方法</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>在创建项目时，由于个人习惯问题，我通常会选择stylus作为css预处理语言，并且会单独建立一个目录去存放 <code>styl</code> 文件，这样既可以在每个 <code>*.vue</code> 单文件组件中使用 <code>stylus</code> 的语法，也可以复用一些 <code>stylus</code> 编写的公共样式、变量、函数等</p></div> <h3 id="引入-stylus-文件-的两种情况"><a href="#引入-stylus-文件-的两种情况" class="header-anchor">#</a> 引入 <code>stylus</code> 文件 的两种情况</h3> <p><strong>1. 只使用 <code>stylus</code> 的缩进、省略大括号、分号的基础语法</strong></p> <div class="language-stylus extra-class"><pre class="language-stylus"><code><span class="token selector">.flex</span>
+  <span class="token property-declaration"><span class="token property">display</span><span class="token punctuation">:</span> flex</span>
+</code></pre></div><p>这种情况下和正常css的引入基本没有区别，在 <code>main.js</code> 全局引入后即可在各个 <code>*vue</code> 单文件组件中使用</p> <p><strong>2. 使用 <code>stylus</code> 的变量、函数等高级语法</strong></p> <div class="language-stylus extra-class"><pre class="language-stylus"><code><span class="token comment">// 变量</span>
+<span class="token variable-declaration"><span class="token variable">$theme-color</span> <span class="token operator">=</span> <span class="token hexcode">#42b983</span> </span>
+
+<span class="token comment">// 函数</span>
+<span class="token func"><span class="token function">multiline-ellipsis</span><span class="token punctuation">(</span>$num <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">)</span> </span>
+  <span class="token property-declaration"><span class="token property">overflow</span><span class="token punctuation">:</span> hidden</span>
+  <span class="token property-declaration"><span class="token property">text-overflow</span><span class="token punctuation">:</span> ellipsis</span>
+  <span class="token property-declaration"><span class="token property">display</span><span class="token punctuation">:</span> -webkit-box</span>
+  <span class="token property-declaration"><span class="token property">-webkit-line-clamp</span><span class="token punctuation">:</span> $num</span>
+  <span class="token property-declaration"><span class="token property">-webkit-box-orient</span><span class="token punctuation">:</span> vertical</span>
+  <span class="token property-declaration"><span class="token property">white-space</span><span class="token punctuation">:</span> normal <span class="token important">!important</span></span>
+  <span class="token property-declaration"><span class="token property">word-wrap</span><span class="token punctuation">:</span> break-word</span>
+</code></pre></div><p>这种情况下在 <code>main.js</code> 中全局引入然后在各个 <code>*.vue</code>单文件组件中使用时不生效的</p> <h2 id="解决方法"><a href="#解决方法" class="header-anchor">#</a> 解决方法</h2> <p>在项目根目录下新增 <code>vue.config.js</code> 文件，根据文档提示使用 <code>css.loaderOptions</code> 给 <code>stylus-loader</code> 传递配置选项，这样就可以在项目中所有地方的 <code>stylus</code> 样式使用你定义的变量、函数等（不必在 <code>main.js</code> 中引入）</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 其他配置</span>
+  css<span class="token operator">:</span> <span class="token punctuation">{</span>
+    loaderOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 这里选择的是stylus，也选择scss、less，但是写法会有差别，需要根据你安装的loader来定</span>
+      stylus<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token keyword">import</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./src/assets/style/index.styl'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 其他配置</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="其他技巧"><a href="#其他技巧" class="header-anchor">#</a> 其他技巧</h3> <p>对于不同种类的样式，可以分开文件管理，然后统一引入一个文件，最后在 <code>vue.config.js</code> 引入那一个文件即可</p> <ul><li><code>mixin.styl</code> mixin函数相关</li></ul> <div class="language-stylus extra-class"><pre class="language-stylus"><code><span class="token comment">// ...</span>
+</code></pre></div><ul><li><code>variables.styl</code> 变量相关</li></ul> <div class="language-stylus extra-class"><pre class="language-stylus"><code><span class="token comment">// ...</span>
+</code></pre></div><ul><li><code>index.styl</code> 统一出口</li></ul> <div class="language-stylus extra-class"><pre class="language-stylus"><code><span class="token atrule-declaration"><span class="token atrule">@import</span> <span class="token string">'mixin.styl'</span></span>
+<span class="token atrule-declaration"><span class="token atrule">@import</span> <span class="token string">'variables.styl'</span></span>
+</code></pre></div><h3 id="参考链接"><a href="#参考链接" class="header-anchor">#</a> 参考链接</h3> <ul><li><a href="https://cli.vuejs.org/zh/guide/css.html" target="_blank" rel="noopener noreferrer">vue-cli css相关<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://github.com/shama/stylus-loader" target="_blank" rel="noopener noreferrer">stylus-loader<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue/利用v-model优化自定义组件.html" class="prev">
+        利用v-model优化自定义组件
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.e5d4c240.js" defer></script><script src="/assets/js/2.a6abf67c.js" defer></script><script src="/assets/js/35.9a91322c.js" defer></script>
+  </body>
+</html>
